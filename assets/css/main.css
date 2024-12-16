@@ -1,0 +1,1009 @@
+/* gfont  */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+
+
+
+:root {
+    --bsclr: #F5F7F9;
+    --color1: #7E7F81;
+    --bsColor: #141A28;
+    --color2: #53AA51;
+    --color2drk: #356934;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+}
+
+
+/* for scroll bar scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 50px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color2);
+    border-radius: 6px;
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+    background-image: radial-gradient(var(--color2), var(--color2drk));
+}
+
+
+
+
+
+a {
+    text-decoration: none;
+}
+
+.color2Back {
+    background-color: var(--color2) !important;
+}
+
+.headTiltle {
+    font-family: "Montserrat", sans-serif;
+    color: var(--bsColor);
+}
+
+.colthm {
+    color: var(--color2);
+}
+
+.colthm1 {
+    color: var(--color2drk);
+}
+
+/* navbar  */
+header {
+    background-color: var(--bsclr);
+}
+
+.nav-link {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+    color: var(--bsColor);
+    margin: auto 5px;
+    position: relative;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 4px;
+    bottom: 3px;
+    background-color: var(--color2);
+    left: 0;
+    transition: all 0.3s ease-in;
+}
+
+.active:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: 3px;
+    background-color: var(--color2);
+    left: 0;
+    transition: all 0.3s ease-in;
+}
+
+.nav-link:hover:before {
+    width: 100%;
+    transition: all 0.3s ease-in;
+}
+
+.SgnUp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    border-radius: 40px;
+    background-color: var(--color2);
+    width: 120px;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+    margin-left: 20px;
+    font-weight: 600;
+}
+
+.SgnUp:active,
+.SgnUp:hover {
+    background-color: var(--color2drk) !important;
+    color: #fff !important;
+    border: none;
+}
+
+.searchBtn {
+    color: #fff;
+}
+
+.searchBtn:hover {
+    color: #fff;
+    background-image: linear-gradient(#00000020, #00000020);
+}
+
+.searchIp {
+    width: 160px;
+    transition: all 0.3s ease;
+    border: 1px solid var(--color2);
+    padding-left: 5px;
+    color: #000;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.hideClass {
+    padding: 0;
+    width: 0px !important;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+.navbar-brand,
+.leftNav {
+    width: 345px;
+}
+
+.leftNav .input-group {
+    width: auto;
+}
+
+.modal {
+    background-color: #141a28b2;
+}
+
+.modal-content {
+    backdrop-filter: blur(10px);
+    border: 1px solid var(--color2);
+    background-color: transparent;
+    box-shadow: 0px 0px 30px var(--bsclr);
+}
+
+.modal-header {
+    background-color: var(--color2drk);
+    border-bottom: none;
+}
+
+.modal-footer {
+    border-top: 1px solid var(--color2);
+}
+
+.modal-body input {
+    background-color: var(--bsclr);
+}
+
+.btnMdl {
+    border: none;
+    color: var(--color2);
+    padding: 0 3px;
+}
+
+.sgnupnav {
+    border: none;
+}
+
+.sgnupnav input {
+    display: none;
+}
+
+.sgnupnav .nav-link {
+    color: #fff;
+    margin: 0;
+}
+
+.sgnupnav .nav-link:hover {
+    color: #fff;
+}
+
+.sgnupnav input:checked+.nav-link {
+    background-color: #fff;
+    color: #141A28;
+}
+
+.sgnupnav input:checked+.nav-link:before {
+    width: 100%;
+}
+
+.sgnupbar {
+    padding: 5px;
+    background-color: #496d49c2;
+    border-radius: 5px;
+    border-top-left-radius: 0px;
+}
+
+
+/* banner  */
+.bannTopImg {
+    filter: drop-shadow(4px 5px 0px black);
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.bannerSection {
+    background-color: var(--bsclr);
+}
+
+
+
+/* .newsSection  */
+.btnsNews {
+    width: 400px;
+}
+
+.accordion-button {
+    padding: 20px 0;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Montserrat", sans-serif;
+    text-underline-position: under;
+    text-transform: uppercase;
+    width: 140px;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.accordion-button:after {
+    content: none;
+}
+
+
+.accordion-button:not(.collapsed) {
+    color: var(--bsColor);
+    background-color: transparent;
+    box-shadow: none;
+    text-decoration: underline 3px solid var(--color2);
+
+}
+
+.sportTag {
+    background-color: var(--bsclr);
+}
+
+.accordion-item {
+    border: none;
+}
+
+.bannerSection img {
+    height: 300px;
+    opacity: 0.7;
+}
+
+.bannHead,
+.bannHead span {
+    font-size: 30px;
+}
+
+
+.goTopBtn {
+    position: fixed;
+    bottom: 50px;
+    right: 50px;
+    padding: 0;
+    margin: 0;
+    border-radius: 50%;
+    border: none;
+    width: 40px;
+    height: 40px;
+    color: var(--color2);
+    filter: drop-shadow(0px 0px 10px #000);
+    background-color: var(--bsclr);
+}
+
+.goTopBtn:hover {
+    color: var(--color2drk);
+}
+
+.goTopBtn svg {
+    height: 100%;
+}
+
+/* post section  */
+.imPost {
+    width: auto;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.postCont {
+    padding-left: 20px;
+    height: 100%;
+}
+
+.ftPost {
+    box-shadow: 0px 0px 10px #000;
+}
+
+.ftPost:nth-child(odd) {
+    flex-direction: row-reverse;
+    background-color: var(--bsclr);
+    border-radius: 5px;
+    padding: 20px 0px;
+}
+
+.ftPost:nth-child(even) {
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    padding: 20px 0px;
+}
+
+.autharDeatails {
+    color: var(--color2);
+}
+
+.moreNewsBox {
+    padding: 5px 20px;
+}
+
+.newsLrs {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.newsLrs {
+    background-color: var(--bsclr);
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+
+.newsSection {
+    background-image: linear-gradient(91deg, #53aa9f, #ddffff);
+}
+
+/* footer  */
+footer {
+    height: 90px;
+    background-color: var(--bsColor);
+    color: var(--bsclr);
+}
+
+
+
+
+
+/* dashboard page  */
+
+
+.postT p {
+    overflow: hidden;
+    max-height: 115px;
+}
+
+.moreNewsLinks {
+    color: var(--bsColor);
+    padding: 0 5px;
+    padding-left: 10px;
+    border-left: 2px solid transparent;
+    font-size: 16px;
+}
+
+.moreNewsLinks:hover {
+    color: var(--color2drk);
+    border-color: var(--color2drk);
+}
+
+.dashboard .container-fluid {
+    background-image: linear-gradient(225deg, #338b93, var(--color2drk));
+}
+
+.detailssection {
+    border-top: 2px solid var(--color2);
+}
+
+.ctrlPannel {
+    background-color: var(--bsColor);
+    padding: 30px;
+    border-bottom: 2px solid var(--color2);
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    width: 100%;
+}
+
+.admnName {
+    color: var(--color2);
+}
+
+.lgnDetl h2 {
+    font-size: 18px;
+}
+
+.lgnDetl h1 {
+    font-size: 20px;
+}
+
+.detailssection .accordion-button {
+    justify-content: left;
+    width: auto;
+}
+
+.userImg {
+    filter: drop-shadow(0px 0px 0px var(--color2));
+}
+
+
+.closeBtn {
+    width: 35px;
+    height: 35px;
+    background-color: var(--color1);
+    padding: 5px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+}
+
+.closeBtn:hover {
+    background-color: var(--bsclr);
+}
+
+.closeBtn svg {
+    height: 30px;
+}
+
+.hidesideBar {
+    width: 73px;
+    padding: 10px;
+    padding-top: 60px;
+    transition: all 0.3s ease;
+}
+
+.hidesideBar .pannelView .btnName,
+.hidesideBar .pannelView .lgnDetl {
+    display: none !important;
+}
+
+.hidesideBar .dashBtn {
+    margin: auto;
+}
+
+.hidesideBar .dashBtn svg {
+    height: 25px;
+}
+
+.dashClose span {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: var(--color2);
+    margin: 3px 0;
+    border-radius: 2px;
+    transition: all 0.7s linear;
+}
+
+.dashClose span:nth-child(1) {
+    rotate: 315deg;
+    width: 50%;
+    transform: translate(-2px, 2px);
+    transition: all 0.7s linear;
+}
+
+.dashClose span:nth-child(3) {
+    rotate: 45deg;
+    width: 50%;
+    transform: translate(-2px, -2px);
+    transition: all 0.7s linear;
+}
+
+.hidesideBar .dashClose span:nth-child(1) {
+    rotate: 45deg;
+    width: 50%;
+    transform: translate(11px, -7px);
+    transition: all 0.7s linear;
+}
+
+
+.hidesideBar .dashClose span:nth-child(3) {
+    rotate: 315deg;
+    width: 50%;
+    transform: translate(11px, 7px);
+    transition: all 0.7s linear;
+}
+
+.dashboradPannel,
+.dashboradPannel .accordion-body {
+    height: calc(100vh - 146px);
+}
+
+.dashboradPannel .accordion-item {
+    background-color: transparent;
+}
+
+.dashboradPannel table {
+    background-color: #ffffff40;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 0px 4px var(--bsclr);
+}
+
+.dashboradPannel th,
+.dashboradPannel td {
+    background-color: transparent;
+    color: var(--bsclr);
+}
+
+.dashboradPannel table th:nth-child(1) {
+    max-width: 80px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dashboradPannel table td:nth-child(2) {
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dashboradPannel table td:nth-child(3) {
+    max-width: 150px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.dashboradPannel table td:nth-child(4) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 450px;
+}
+
+.editDash {
+    border: none;
+    background: none;
+    color: #003d3f;
+}
+
+.editDash:hover {
+    color: var(--bsclr);
+}
+
+.trashBtn {
+    border: none;
+    background: none;
+    color: #7f0000;
+}
+
+.btnshort {
+    height: auto;
+    width: 20px;
+    color: #fff;
+    border: none;
+    background-color: transparent;
+    float: right;
+}
+
+.btnshort:hover {
+    color: #fff;
+    border: none;
+}
+
+.trashBtn:hover {
+    color: #a03636;
+}
+
+.dashboradPannel table tr:nth-child(2n) {
+    background-color: #0000004a;
+}
+
+.dashboradPannel table thead {
+    background-color: var(--bsColor);
+}
+
+.pagination li a {
+    padding: 8px 20px;
+    color: var(--bsclr);
+    background-color: var(--bsColor);
+    margin: 3px 2px;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.pagination li a:hover {
+    color: var(--color2);
+    background-image: linear-gradient(#00000020, #00000020);
+}
+
+.detailsatDb {
+    background-color: var(--bsColor);
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    box-shadow: 0px 0px 4px var(--bsclr);
+    color: var(--bsclr);
+}
+
+.detailsatDb h1 {
+    font-size: 25px;
+}
+
+.detailsatDb span {
+    font-size: 30px;
+}
+
+.detailsatDb span svg {
+    height: 30px;
+}
+
+.userimgmj {
+    width: 45px;
+    height: 45px;
+    filter: drop-shadow(0px 0px 10px #fff);
+}
+
+.usersDetailsCards .card {
+    margin: 10px;
+    box-shadow: 0px 0px 10px #fff;
+    background: var(--bsColor);
+    color: var(--bsclr);
+    width: 20%;
+}
+
+.usersDetailsCards .card-img-top {
+    height: 70px;
+    margin-bottom: -35px;
+}
+
+.usersbox label {
+    color: var(--color1);
+}
+
+.usersDetailsCards .SgnUp {
+    width: 160px;
+}
+
+.usersDetailsCards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.paginationBox {
+    margin-top: 35px;
+}
+
+.userData {
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #fff;
+    background-color: var(--bsColor);
+}
+
+.profilePic {
+    margin-top: -15px;
+    filter: drop-shadow(0px 0px 10px #fff);
+}
+
+.detailedDataUser label {
+    color: #fff;
+}
+
+.userDataBtnBox .btn {
+    width: 200px;
+}
+
+.postsAreaRightV {
+    width: 930px;
+}
+
+.newsHeadImagTtl {
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+}
+
+.authorIms {
+    height: 30px;
+    width: auto;
+}
+
+.authorsPost {
+    color: var(--bsColor);
+    font-weight: 600;
+}
+
+.authorsPost span {
+    font-weight: 400;
+    color: var(--color1);
+}
+
+.nexTnws div:nth-child(1) {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 240px;
+}
+
+.rghtScrollStickSection {
+    top: 50px;
+}
+
+
+
+/* for userpdetails page  */
+
+.userProfileInput {
+    height: 42px;
+    width: 400px;
+    border: none;
+    padding-left: 5px;
+    font-size: 20px;
+    background-color: transparent;
+    color: var(--bsclr);
+    border-bottom: 2px solid var(--color1);
+    border-radius: 0;
+}
+
+.userProfileInput:focus,
+.userProfileInput option {
+    background-color: var(--bsColor);
+    color: var(--bsclr);
+    outline: none;
+}
+
+.userProfileInput option:hover {
+    background-color: var(--color2drk);
+}
+
+.usersdtls svg {
+    height: 25px;
+    color: var(--color2);
+}
+
+
+
+
+/* single news page  */
+.imgBoxes {
+    width: 550px;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.newsOne .container {
+    background-color: var(--bsclr);
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #000;
+}
+
+
+.latestSection .container {
+    background-color: var(--color1);
+    border-radius: 5px;
+    margin: 20px auto;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.btnRotate {
+    rotate: 180deg;
+    transition: all 0.3s ease;
+}
+
+.btnshort {
+    transition: all 0.3s ease;
+}
+
+.single-news {
+    background-image: linear-gradient(91deg, #53aa9f, #ddffff);
+}
+
+
+
+/* about page  */
+
+.statAbout {
+    background-color: var(--bsclr);
+    border-radius: 10px;
+}
+
+.LinkAbout svg {
+    height: 30px;
+}
+
+.linksonAbout {
+    color: var(--color1);
+}
+
+.linksonAbout:hover {
+    color: var(--color2);
+}
+
+.linksonAbout:active {
+    color: var(--color2drk);
+}
+
+.descriptAboutBox img {
+    height: 40px;
+}
+
+.flagBox {
+    width: 40px !important;
+    height: 40px;
+    background-color: var(--color1);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.topAuthor {
+    background-color: var(--bsclr);
+    border-radius: 10px;
+}
+
+.membersBox img {
+    width: 40px;
+    margin-left: -11px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+
+/* contact page  */
+
+.contactform form textarea {
+    height: 200px !important;
+    resize: none;
+}
+
+.contactSectright .socialLinks {
+    background-color: var(--bsclr);
+    border-radius: 10px;
+
+}
+
+
+
+.txtareaInp {}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* responsive  */
+@media(max-width:1399px) {}
+
+@media(max-width:1199px) {
+    .latestSection .imgBoxes {
+        width: auto;
+    }
+}
+
+@media(max-width:991px) {
+    .leftNav {
+        width: auto;
+    }
+
+    .SgnUp {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .ftPost:nth-child(odd) {
+        flex-direction: column;
+    }
+
+    .nav-link {
+        width: 300px;
+        margin: 3px auto;
+    }
+
+    .navbar-brand {
+        width: 270px;
+    }
+
+    .postsAreaRightV {
+        width: auto;
+        padding-top: 30px;
+    }
+
+    .nexTnws div:nth-child(1) {
+        max-width: 500px;
+    }
+}
+
+@media(max-width:767px) {
+    .nexTnws div:nth-child(1) {
+        max-width: 300px;
+    }
+
+    .imgBoxes {
+        width: auto;
+    }
+}
+
+@media(max-width:575px) {
+    .bannerSection img {
+        height: auto;
+    }
+
+    .navbar-brand {
+        width: auto;
+        margin: 0;
+    }
+
+    .navbar-brand img {
+        width: 120px;
+    }
+
+    .searchIp {
+        width: 84px;
+    }
+
+    .btnsNews {
+        width: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .bannTopImg {
+        width: 70px;
+        margin-top: -30px;
+    }
+
+    .nav-link {
+        width: 110px;
+    }
+
+    .nexTnws {
+        width: auto;
+        overflow: hidden;
+    }
+
+    .descriptAboutBox {
+        text-align: center;
+    }
+
+    .topAuthor {
+        text-align: left;
+    }
+
+    .goTopBtn {
+        right: 30px;
+        bottom: 30px;
+    }
+
+    .ftPost {
+        margin: 0;
+    }
+
+    .newsOne,
+    .latestSection {
+        padding: 0 15px;
+    }
+}
